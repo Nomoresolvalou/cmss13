@@ -238,7 +238,7 @@
 				playsound(src, 'sound/items/Welder.ogg', 25, 1)
 				if(!do_after(user, 10 * user.get_skill_duration_multiplier(SKILL_CONSTRUCTION), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_BUILD))
 					return
-				new /obj/item/stack/sheet/metal(src.loc)
+				new /obj/item/stack/sheet/scrap_metal(src.loc)
 				for(var/mob/M as anything in viewers(src))
 					M.show_message(SPAN_NOTICE("\The [src] has been cut apart by [user] with [WT]."), SHOW_MESSAGE_VISIBLE, "You hear welding.", SHOW_MESSAGE_AUDIBLE)
 				qdel(src)

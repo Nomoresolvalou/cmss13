@@ -41,7 +41,7 @@
 	if(!disassembled)
 		var/turf/Tsec = get_turf(src)
 
-		new /obj/item/stack/sheet/metal(Tsec)
+		new /obj/item/stack/sheet/scrap_metal(Tsec)
 		new /obj/item/stack/rods(Tsec)
 		new /obj/item/stack/rods(Tsec)
 
@@ -329,7 +329,7 @@
 		actual_turf = SSmapping.get_turf_above(target_turf)
 	else
 		actual_turf = SSmapping.get_turf_below(target_turf)
-	
+
 	if(actual_turf)
 		if(istype(mover, /mob))
 			var/mob/mover_mob = mover

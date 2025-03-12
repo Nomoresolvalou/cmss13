@@ -14,7 +14,7 @@ Code shamelessly copied from apc_frame
 
 /obj/item/frame/air_alarm/attackby(obj/item/W as obj, mob/user as mob)
 	if (HAS_TRAIT(W, TRAIT_TOOL_WRENCH))
-		new /obj/item/stack/sheet/metal( get_turf(src.loc), 2 )
+		new /obj/item/stack/sheet/scrap_metal( get_turf(src.loc), 2 )
 		qdel(src)
 		return
 	..()
@@ -57,7 +57,7 @@ Code shamelessly copied from apc_frame
 
 /obj/item/frame/fire_alarm/attackby(obj/item/W as obj, mob/user as mob)
 	if (HAS_TRAIT(W, TRAIT_TOOL_WRENCH))
-		new /obj/item/stack/sheet/metal( get_turf(src.loc), 2 )
+		new /obj/item/stack/sheet/scrap_metal( get_turf(src.loc), 2 )
 		qdel(src)
 		return
 	..()

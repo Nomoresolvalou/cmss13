@@ -806,7 +806,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 /obj/structure/machinery/power/apc/deconstruct(disassembled = TRUE)
 	if(disassembled)
 		if((stat & BROKEN) || opened == 2)
-			new /obj/item/stack/sheet/metal(loc)
+			new /obj/item/stack/sheet/scrap_metal(loc)
 		else
 			new /obj/item/frame/apc(loc)
 	return ..()

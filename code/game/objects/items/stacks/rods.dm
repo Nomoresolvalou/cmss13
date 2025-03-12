@@ -19,7 +19,7 @@
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	stack_id = "metal rod"
 	garbage = TRUE
-	var/sheet_path = /obj/item/stack/sheet/metal
+	var/sheet_path = /obj/item/stack/sheet/scrap_metal
 	var/used_per_sheet = 4
 
 /obj/item/stack/rods/Initialize(mapload, ...)

@@ -14,7 +14,7 @@
 	var/basestate = "window"
 	var/junction = 0
 	var/reinforced = FALSE
-	var/buildstacktype = /obj/item/stack/sheet/metal
+	var/buildstacktype = /obj/item/stack/sheet/scrap_metal
 	var/buildstackamount = 2
 	projectile_coverage = PROJECTILE_COVERAGE_MEDIUM
 	surgery_duration_multiplier = SURGERY_SURFACE_MULT_UNSUITED

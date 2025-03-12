@@ -240,7 +240,7 @@
 	icon = 'icons/obj/structures/barrels.dmi'
 	icon_state = "barrel_blue"
 	var/strap_overlay = "+straps"
-	parts_type = /obj/item/stack/sheet/metal
+	parts_type = /obj/item/stack/sheet/scrap_metal
 	unpacking_sound = 'sound/effects/metalhit.ogg'
 	var/straps = FALSE
 

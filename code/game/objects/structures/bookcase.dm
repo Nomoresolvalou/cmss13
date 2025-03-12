@@ -8,7 +8,7 @@
 	opacity = TRUE
 
 /obj/structure/bookcase/deconstruct(disassembled)
-	new /obj/item/stack/sheet/metal(loc)
+	new /obj/item/stack/sheet/scrap_metal(loc)
 	return ..()
 
 /obj/structure/bookcase/attack_alien(mob/living/carbon/xenomorph/xeno)

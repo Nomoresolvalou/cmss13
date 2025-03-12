@@ -67,8 +67,8 @@
 	var/turf/Tsec = get_turf(src)
 	new /obj/item/stack/rods(Tsec)
 	new /obj/item/stack/rods(Tsec)
-	new /obj/item/stack/sheet/metal(Tsec)
-	new /obj/item/stack/sheet/metal(Tsec)
+	new /obj/item/stack/sheet/scrap_metal(Tsec)
+	new /obj/item/stack/sheet/scrap_metal(Tsec)
 	new /obj/item/stack/cable_coil/cut(Tsec)
 
 	new /obj/effect/spawner/gibspawner/robot(Tsec)
@@ -698,7 +698,7 @@
 	breakable = TRUE
 	bound_height = 32
 	bound_width = 64
-	debris = list(/obj/item/stack/sheet/metal)
+	debris = list(/obj/item/stack/sheet/scrap_metal)
 
 /obj/structure/prop/hybrisa/furniture/tables/tableblack/blacktablecomputer
 	icon = 'icons/obj/structures/tables_64x64.dmi'
