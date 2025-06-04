@@ -23,7 +23,7 @@
 	var/parts = /obj/item/frame/table
 	debris = list(/obj/item/frame/table)
 
-	var/sheet_type = /obj/item/stack/sheet/metal
+	var/sheet_type = /obj/item/stack/sheet/scrap_metal
 	var/table_prefix = "" //used in update_icon()
 	var/reinforced = FALSE
 	var/flipped = 0
@@ -695,7 +695,7 @@
 		if(parts)
 			new parts(loc)
 	else
-		new /obj/item/stack/sheet/metal(loc)
+		new /obj/item/stack/sheet/scrap_metal(loc)
 	density = FALSE
 	return ..()
 

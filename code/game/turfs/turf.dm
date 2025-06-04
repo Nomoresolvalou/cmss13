@@ -618,7 +618,7 @@
 				if(amount >1)
 					visible_message(SPAN_BOLDNOTICE("Pieces of metal crash down from above!"))
 				for(var/i=1, i<=amount, i++)
-					new /obj/item/stack/sheet/metal(pick(turfs))
+					new /obj/item/stack/sheet/scrap_metal(pick(turfs))
 		if(CEILING_UNDERGROUND_ALLOW_CAS, CEILING_UNDERGROUND_BLOCK_CAS, CEILING_DEEP_UNDERGROUND)
 			playsound(src, "sound/effects/meteorimpact.ogg", 60, 1)
 			spawn(8)
@@ -631,7 +631,7 @@
 			playsound(src, "sound/effects/metal_crash.ogg", 60, 1)
 			spawn(8)
 				for(var/i=1, i<=amount, i++)
-					new /obj/item/stack/sheet/metal(pick(turfs))
+					new /obj/item/stack/sheet/scrap_metal(pick(turfs))
 					new /obj/item/ore(pick(turfs))
 	turf_flags |= TURF_DEBRISED
 

@@ -64,7 +64,7 @@
 			playsound(src, 'sound/items/deconstruct.ogg', 35)
 			if(do_after(user, 5 SECONDS, INTERRUPT_ALL, BUSY_ICON_GENERIC))
 				visible_message(SPAN_NOTICE("[user] takes apart [src]."), SPAN_NOTICE("You take apart [src]."))
-				new /obj/item/stack/sheet/metal(get_turf(src))
+				new /obj/item/stack/sheet/scrap_metal(get_turf(src))
 				qdel(src)
 				return TRUE
 		else

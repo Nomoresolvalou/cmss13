@@ -19,7 +19,7 @@
 	density = TRUE
 	layer = OBJ_LAYER
 	unacidable = FALSE
-	debris = list(/obj/item/stack/sheet/metal, /obj/item/stack/sheet/metal)
+	debris = list(/obj/item/stack/sheet/scrap_metal, /obj/item/stack/sheet/scrap_metal)
 	var/state = STATE_STANDARD
 	var/step_state = STATE_STANDARD
 	health = 125
@@ -240,7 +240,7 @@
 
 /obj/structure/girder/deconstruct(disassembled = TRUE)
 	if(disassembled)
-		new /obj/item/stack/sheet/metal(loc, 2)
+		new /obj/item/stack/sheet/scrap_metal(loc, 2)
 	return ..()
 
 /obj/structure/girder/proc/do_wall(obj/item/W, mob/user)

@@ -24,7 +24,7 @@ GLOBAL_LIST_EMPTY(fishing_loot_tables)
 		/obj/item/ore/iron,
 		/obj/item/fish_bait,
 		/obj/item/storage/beer_pack,
-		/obj/item/stack/sheet/metal
+		/obj/item/stack/sheet/scrap_metal
 	)
 	var/list/rare_fishable_atoms = list(
 		/obj/item/reagent_container/food/snacks/packaged_burrito,

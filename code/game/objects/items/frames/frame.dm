@@ -16,7 +16,7 @@
 /obj/item/frame/apc/attackby(obj/item/W as obj, mob/user as mob)
 	..()
 	if (HAS_TRAIT(W, TRAIT_TOOL_WRENCH))
-		new /obj/item/stack/sheet/metal( get_turf(src.loc), 2 )
+		new /obj/item/stack/sheet/scrap_metal( get_turf(src.loc), 2 )
 		qdel(src)
 
 /obj/item/frame/apc/proc/try_build(turf/on_wall)

@@ -774,7 +774,7 @@
 	if(health <= 0)
 		alien.visible_message(SPAN_DANGER("[alien] slices \the [src] apart!"),
 		SPAN_DANGER("We slice \the [src] apart!"), null, 5, CHAT_TYPE_XENO_COMBAT)
-		new /obj/item/stack/sheet/metal(destroyloc, 2)
+		new /obj/item/stack/sheet/scrap_metal(destroyloc, 2)
 	else
 		alien.visible_message(SPAN_DANGER("[alien] [alien.slashes_verb] \the [src]!"),
 		SPAN_DANGER("We [alien.slash_verb] \the [src]!"), null, 5, CHAT_TYPE_XENO_COMBAT)
