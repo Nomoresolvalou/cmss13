@@ -38,7 +38,7 @@
 	tgui_interact(user)
 
 /obj/structure/machinery/bioprinter/attackby(obj/item/W, mob/user)
-	if(istype(W, /obj/item/stack/sheet/metal))
+	if(istype(W, /obj/item/stack/sheet/metal) || istype(W, /obj/item/stack/sheet/scrap_metal))
 		if(stored_metal == max_metal)
 			to_chat(user, SPAN_WARNING("\The [src] is full!"))
 			return
@@ -148,7 +148,7 @@
 			sheets_to_print = round(sheets_to_print, 1)
 			stored_metal -= sheets_to_print*100
 			visible_message("\The [src] ejects [sheets_to_print] metal sheets from its storage.")
-			new /obj/item/stack/sheet/metal(get_turf(src), sheets_to_print)
+			new /obj/item/stack/sheet/scrap_metal(get_turf(src), sheets_to_print)
 			return TRUE
 
 

@@ -94,7 +94,7 @@
 
 /datum/autolathe/recipe/metal
 	name = "steel sheets"
-	path = /obj/item/stack/sheet/metal
+	path = /obj/item/stack/sheet/scrap_metal
 	category = AUTOLATHE_CATEGORY_GENERAL
 	is_stack = 1
 
